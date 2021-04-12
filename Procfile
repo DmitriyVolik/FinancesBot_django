@@ -1,0 +1,1 @@
+web: gunicorn  FinancesBotTG_django.wsgi
