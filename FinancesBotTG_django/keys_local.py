@@ -10,3 +10,5 @@ DATABASE = {
 }
 
 django_secret_key='2m8b5!dulo$r^=#5uwc^(@uq64ik8y07x8%^g$-nhqoy(hdz_x'
+
+gtggt
