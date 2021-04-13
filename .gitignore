@@ -30,8 +30,10 @@ media
 
 # Distribution / packaging
 .Python
-/Bot/bot_models/bot_key_local.py
-/FinancesBotTG_django/keys_local.py
+
+Bot/bot_models/bot_key_local.py
+FinancesBotTG_django/keys_local.py
+
 build/
 develop-eggs/
 dist/
