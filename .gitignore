@@ -14,8 +14,7 @@ db.sqlite3
 db.sqlite3-journal
 media
 
-Bot/bot_models/bot_key_local.py
-FinancesBotTG_django/keys_local.py
+
 
 # If your build process includes running collectstatic, then you probably don't need or want to include staticfiles/
 # in your Git repository. Update and uncomment the following line accordingly.
@@ -31,6 +30,8 @@ FinancesBotTG_django/keys_local.py
 
 # Distribution / packaging
 .Python
+Bot/bot_models/bot_key_local.py
+FinancesBotTG_django/keys_local.py
 build/
 develop-eggs/
 dist/
