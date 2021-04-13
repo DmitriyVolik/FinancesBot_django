@@ -5,6 +5,7 @@ from Bot.bot_models.currency import currency
 import telebot
 import Bot.bot_models.keyboards as kb
 import Bot.bot_models.predicates as pd
+from Bot.models import Keyboards
 
 
 class show_exchange_rate_state(state):
@@ -25,6 +26,5 @@ class show_exchange_rate_state(state):
             return default_state(self.bot, self.user)
 
     def display(self):
-        helper.del_last_keyboard(self.bot, self.user)
         msg = self.bot.send_message(self.user.chat_id, "Оберіть валюту", reply_markup=kb.chose_currency)
         self.user.last_keyboard = msg.message_id

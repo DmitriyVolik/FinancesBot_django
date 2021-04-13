@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 from pathlib import Path
 import django_heroku
+from FinancesBotTG_django.keys_local import *
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +22,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '2m8b5!dulo$r^=#5uwc^(@uq64ik8y07x8%^g$-nhqoy(hdz_x'
+SECRET_KEY = django_secret_key
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -76,16 +77,7 @@ WSGI_APPLICATION = 'FinancesBotTG_django.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'd7rr6f7knul2s8',
-        'USER': 'pxixlbqawcsqpi',
-        'PASSWORD': 'df690ec518041730354a2448c222257e5d3051d03d3f2d6f592d91c965997ac6',
-        'HOST': 'ec2-3-87-180-131.compute-1.amazonaws.com',
-        'PORT': '5432',
-    }
-}
+DATABASES = DATABASE
 
 
 # Password validation

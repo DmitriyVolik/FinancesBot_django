@@ -1,17 +1,18 @@
 import telebot
-from django.core.exceptions import ObjectDoesNotExist
+from telebot import apihelper
+from Bot.bot_models.bot_key_local import TOKEN
 
 from Bot.models import User
-from Bot.models import Subscribe
 
 
 class helper:
 
     @staticmethod
-    def del_last_keyboard(bot: telebot,user: User):
+    def del_last_keyboard(user: User):
         if user.last_keyboard != None:
             try:
-                bot.edit_message_reply_markup(user.chat_id, user.last_keyboard, reply_markup=None)
+                apihelper.delete_message(TOKEN, user.chat_id, user.last_keyboard)
+                # bot.edit_message_reply_markup(user.chat_id, user.last_keyboard, reply_markup=None)
                 user.last_keyboard = None
             except:
                 pass

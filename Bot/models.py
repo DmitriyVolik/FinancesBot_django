@@ -15,3 +15,10 @@ class Subscribe(models.Model):
     rate_type = models.CharField(max_length=4)
     threshold = models.DecimalField(max_digits=19, decimal_places=2)
     condition = models.CharField(max_length=3)
+
+class Keyboards(models.Model):
+    user = models.ForeignKey(User, on_delete=models.CASCADE)
+    message_id=models.IntegerField(null=True)
+
+
+
