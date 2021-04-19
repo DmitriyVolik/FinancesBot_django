@@ -46,6 +46,6 @@ def handle_text(message):
         new_state = current_state.handle_message(message)
 
     if new_state != None:
-        helper.del_last_keyboard(current_state.user)
+        # helper.del_last_keyboard(current_state.user)
         provider.set_state(new_state)
 
