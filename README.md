@@ -9,5 +9,5 @@
 
 <h2>Розробник</h2>
 
-Дмитро Волік
+Волік Дмитро 
 [dmitrvolik@gmail.com](mailto:dmitrvolik@gmail.com)
